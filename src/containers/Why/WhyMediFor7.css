@@ -1,0 +1,97 @@
+.gpt3__possibility1 {
+  display: flex;
+  flex-direction: row;
+  background: radial-gradient(circle at 3% 25%, #209dde 0%, #d21788 100%);
+}
+
+.gpt3__possibility-image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 2rem;
+}
+
+.gpt3__possibility-image {
+  flex: 1;
+  display: flex;
+  justify-content: center; /* Centering the image horizontally */
+  align-items: center; /* Centering the image vertically */
+  margin-right: 2rem;
+  position: relative; /* Ensures image fits the container correctly */
+  overflow: hidden; /* Prevents any overflow of the image outside the container */
+}
+
+.gpt3__possibility-image img {
+  width: 100%; /* Ensures image fits container's width */
+  height: 100%; /* Ensures image fills the container's height */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Adds drop shadow to the image */
+  border-radius: 8px; /* Optional: Rounded corners for the image */
+}
+
+.gpt3__possibility-content {
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.gpt3__possibility-content h4 {
+  font-family: var(--font-family);
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 45px;
+  color: #71e5ff;
+}
+
+.gpt3__possibility-content p {
+  font-family: var(--font-family);
+  color: white;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 35px;
+
+  color: #ffffff;
+}
+
+.gpt3__possibility-content h1 {
+  font-family: var(--font-family);
+  color: white;
+  font-weight: 800;
+  font-size: 34px;
+  line-height: 45px;
+  margin: 1rem 0;
+}
+
+.gpt3__possibility-content h5 {
+  font-family: var(--font-family);
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--color-subtext);
+}
+
+@media screen and (max-width: 550px) {
+  .gpt3__possibility1 {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 910px) {
+  .gpt3__possibility1 {
+    flex-direction: column;
+  }
+
+  .gpt3__possibility-content h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .gpt3__possibility-image {
+    justify-content: center;
+    align-items: center;
+  }
+}

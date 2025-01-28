@@ -1,20 +1,36 @@
-.gpt3__blog-container_article {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  background: var(--color-footer);
-}
-
 .gpt3__blog-container_article-img {
   width: 100%;
-  height: 100%;
-  background: var(--color-footer);
+  height: 250px; /* Fixed height for the image */
+  overflow: hidden; /* Prevents any overflow of the image */
 }
 
 .gpt3__blog-container_article-img img {
   width: 100%;
   height: 100%;
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.gpt3__blog-container_article {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    circle at 3% 25%,
+    #209dde 0%,
+    #d21788 100%
+  ); /* Gradient background */
+}
+
+.gpt3__blog-container_article-img {
+  width: 100%;
+  height: 100%;
+}
+
+.gpt3__blog-container_article-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure the image covers the container without distortion */
 }
 
 .gpt3__blog-container_article-content {
@@ -23,16 +39,15 @@
   justify-content: space-between;
   padding: 1rem 1.5rem;
   height: 100%;
+  color: white; /* Set text color to white */
 }
 
 .gpt3__blog-container_article-content h3 {
   font-family: var(--font-family);
-
   font-weight: 800;
   font-size: 25.11px;
   line-height: 30px;
-
-  color: #ffffff;
+  color: white; /* Ensure the heading text is white */
 }
 
 .gpt3__blog-container_article-content p {
@@ -40,7 +55,7 @@
   font-weight: 700;
   font-size: 11.649px;
   line-height: 35px;
-  color: #ffffff;
+  color: white; /* Set paragraph text color to white */
 }
 
 .gpt3__blog-container_article-content p:last-child {
@@ -48,13 +63,12 @@
   font-weight: 700;
   font-size: 11.649px;
   line-height: 35px;
-  color: #ffffff;
+  color: white; /* Set last paragraph text color to white */
 }
 
-@media screen and (max-wdith:550px) {
-    .gpt3__blog-container_article-content h3{
-        font-size: 18px;
-        line-height: 25px;
-    }
-    
+@media screen and (max-width: 550px) {
+  .gpt3__blog-container_article-content h3 {
+    font-size: 18px;
+    line-height: 25px;
+  }
 }

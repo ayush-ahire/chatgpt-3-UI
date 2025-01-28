@@ -1,16 +1,50 @@
-.gpt3__brand{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+.gpt3__brand-wrapper {
+  overflow: hidden;
+  width: 100%; /* Full width of the viewport */
+  position: relative;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
-.gpt3__brand div{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 1rem;
-    max-width: 150px;
-    min-width: 120px;
+.gpt3__brand {
+  display: flex;
+  align-items: center;
+  animation: scroll-left 15s linear infinite;
+  animation-play-state: running; /* Default animation state */
+  gap: 4rem;
+  width: calc(
+    200%
+  ); /* Ensure the container width is enough for both sets of images */
+  margin: 0 auto;
+}
+
+.gpt3__brand:hover {
+  animation-play-state: paused; /* Pause animation on hover */
+}
+
+.gpt3__brand div {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80px; /* Adjust size to make them smaller */
+  min-width: 80px;
+}
+
+.gpt3__brand img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Optional: add rounded corners */
+}
+
+/* Keyframes for marquee effect */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%); /* Start from the original position */
+  }
+  100% {
+    transform: translateX(
+      -50%
+    ); /* Move to the end of the first set of images */
+  }
 }

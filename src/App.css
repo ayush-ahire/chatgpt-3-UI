@@ -11,6 +11,7 @@ a {
   text-decoration: none;
   color: unset;
 }
+
 .gradient__bg {
   /* ff 3.6+ */
   background: -moz-radial-gradient(
@@ -49,6 +50,12 @@ a {
 }
 .gradient__text {
   background: var(--gradient-text);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.gradient__div {
+  background-color: var(--gradient-div);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

@@ -10,6 +10,7 @@
   justify-content: flex-start;
   align-items: flex-start;
   flex-direction: column;
+
   text-align: left;
   margin-right: 5rem;
 }
@@ -20,7 +21,6 @@
   font-size: 34px;
   line-height: 45px;
 }
-
 .gpt3__features-heading p {
   font-family: var(--font-family);
   color: #ff8a71;
@@ -38,11 +38,6 @@
   flex-direction: column;
 }
 
-.gpt3__features-container .gpt3__features-container__feature-title h1,
-.gpt3__features-container .gpt3__features-container__feature-text p {
-  color: black; /* Set the text color inside feature component to black */
-}
-
 @media screen and (max-width: 990px) {
   .gpt3__features {
     flex-direction: column;
@@ -51,7 +46,6 @@
     margin: 0 0 2rem 0;
   }
 }
-
 @media screen and (max-width: 550px) {
   .gpt3__features-heading h2 {
     line-height: 28px;
